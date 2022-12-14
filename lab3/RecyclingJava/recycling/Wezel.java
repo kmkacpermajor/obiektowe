@@ -1,4 +1,4 @@
-package recycling;
+package lab3.RecyclingJava.recycling;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,6 +6,12 @@ import java.util.TreeMap;
 import java.util.Scanner;
 import java.util.Map;
 import java.util.Arrays;
+
+// zad5: Nie
+// zad6: Tak
+// zad11: Powstałe odniesienia nie są silne, więc Java uznaje, że w wypadku braku miejsca w pamięci można usunąć te obiekty 
+// zad12: Bo musielibyśmy z góry określić ilość połączeń
+
 
 public class Wezel {
     ArrayList<Wezel> polaczenia = new ArrayList<>();

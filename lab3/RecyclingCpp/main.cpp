@@ -1,6 +1,9 @@
 #include <memory>
 #include "Wezel.h"
 
+//zad 6: Nie, w obu przypadkach obiekt jest usuwany
+//zad 9: Nie, żaden obiekt nie jest usuwany
+
 int main(){
     for(int i=0; i<10; i++){
         // std::unique_ptr<Wezel>(new Wezel());
