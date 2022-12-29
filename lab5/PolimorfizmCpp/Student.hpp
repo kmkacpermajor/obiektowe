@@ -1,7 +1,9 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
-#include"Osoba.h"
+#include<string>
+#include<iostream>
+#include"Osoba.hpp"
 
 class Student : public Osoba{
 private:

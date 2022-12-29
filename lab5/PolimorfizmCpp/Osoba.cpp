@@ -1,6 +1,4 @@
-#include<string>
-#include<iostream>
-#include"Osoba.h"
+#include"Osoba.hpp"
 
 Osoba::Osoba(std::string newName, std::string newSurname){
     name = newName;

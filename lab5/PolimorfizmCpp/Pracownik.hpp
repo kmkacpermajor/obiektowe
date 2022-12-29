@@ -1,7 +1,9 @@
 #ifndef PRACOWNIK_H
 #define PRACOWNIK_H
 
-#include"Osoba.h"
+#include<string>
+#include<iostream>
+#include"Osoba.hpp"
 
 class Pracownik : public Osoba{
 private:

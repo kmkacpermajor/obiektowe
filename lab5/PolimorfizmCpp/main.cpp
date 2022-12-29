@@ -1,12 +1,13 @@
-#include"Osoba.h"
-#include"Student.h"
-#include"Pracownik.h"
+#include<iostream>
+#include"Osoba.hpp"
+#include"Student.hpp"
+#include"Pracownik.hpp"
 
 int main(){
 
-    Student student("Kacper", "Majorkowski", "PP", 4.0);
+    Osoba osoba("Kacper", "Majorkowski");
 
-    student.przedstaw();
+    std::cout << osoba.getName() << std::endl; 
 
     return 0;
 }

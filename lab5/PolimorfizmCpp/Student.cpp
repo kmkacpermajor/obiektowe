@@ -1,6 +1,4 @@
-#include<string>
-#include<iostream>
-#include"Student.h"
+#include"Student.hpp"
 
 Student::Student(std::string newName, std::string newSurname, std::string newUniversityName, float newAvgGrades) : Osoba(newName, newSurname){
     universityName = newUniversityName;

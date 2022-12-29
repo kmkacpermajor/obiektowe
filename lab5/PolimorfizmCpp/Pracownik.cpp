@@ -1,6 +1,4 @@
-#include<string>
-#include<iostream>
-#include"Pracownik.h"
+#include"Pracownik.hpp"
 
 Pracownik::Pracownik(std::string newName, std::string newSurname, std::string newPosition, float newSalary) : Osoba(newName, newSurname){
     position = newPosition;
