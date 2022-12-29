@@ -1,7 +1,7 @@
 CC :=g++
 LDFLAGS := -Wall
-NAMESC :=$(wildcard **/*.cpp)
-NAMESC := $(wildcard **/**/*.cpp $(NAMESC))
+NAMESC :=$(wildcard **/main.cpp)
+NAMESC := $(wildcard **/**/main.cpp $(NAMESC))
 NAMES :=$(NAMESC:.cpp=)
 
 all: $(NAMES)

@@ -1,3 +1,5 @@
+#include<string>
+
 class Samochod{
 private:
     float pojemnosc_baku;
@@ -78,12 +80,5 @@ public:
 
     void operator |= (float nowa_pojemnosc) {
         this->pojemnosc_baku = nowa_pojemnosc;
-    }
-};
-
-// zad 12
-struct cmp{
-    bool operator () (const Samochod & a, const Samochod & b) const{
-        return a.getPojemnoscBaku() < b.getPojemnoscBaku();
     }
 };

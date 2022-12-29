@@ -2,8 +2,14 @@
 #include <algorithm>
 #include <vector>
 #include <set>
-#include "lab4.h"
+#include "Samochod.h"
 
+// zad 12
+struct cmp{
+    bool operator () (const Samochod & a, const Samochod & b) const{
+        return a.getPojemnoscBaku() < b.getPojemnoscBaku();
+    }
+};
 
 int main(){
     Samochod s1(123, "audi");
@@ -19,7 +25,7 @@ int main(){
     }
 
     if(s1<s2){
-        std::cout << "prawda" << std::endl;
+        std::cout << "Audi jest mniejsze (leksykograficznie) od BMW " << std::endl;
     }
 
     std::vector <Samochod> v;
@@ -52,6 +58,6 @@ int main(){
     std::cout << "Poziom " << s1.getPoziomPaliwa() << std::endl;
     std::cout << "Nazwa " << s2.getModel() << std::endl;
     std::cout << "Pojemnosc " << s3.getPojemnoscBaku() << std::endl;
-
+   
     return 0;
 }
