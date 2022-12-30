@@ -5,6 +5,10 @@ Pracownik::Pracownik(std::string newName, std::string newSurname, std::string ne
     salary = newSalary;
 }
 
+Pracownik::~Pracownik(){
+    std::cout << "Usuwam obiekt pracownik" << std::endl;
+}
+
 void Pracownik::setPosition(std::string newPosition){
     position = newPosition;
 }

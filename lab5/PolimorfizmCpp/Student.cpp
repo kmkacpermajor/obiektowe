@@ -1,8 +1,13 @@
 #include"Student.hpp"
 
+
 Student::Student(std::string newName, std::string newSurname, std::string newUniversityName, float newAvgGrades) : Osoba(newName, newSurname){
     universityName = newUniversityName;
     avgGrades = newAvgGrades;
+}
+
+Student::~Student(){
+    std::cout << "Usuwam obiekt student" << std::endl;
 }
 
 void Student::setUniversityName(std::string newUniversityName){

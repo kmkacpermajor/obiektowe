@@ -13,6 +13,8 @@ private:
 public:
     Pracownik(std::string newName, std::string newSurname, std::string newPosition, float newSalary);
 
+    ~Pracownik();
+
     void setPosition(std::string newPosition);
 
     void setSalary(float newSalary);

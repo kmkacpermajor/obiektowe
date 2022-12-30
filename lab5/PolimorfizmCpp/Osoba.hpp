@@ -12,13 +12,15 @@ protected:
 public:
     Osoba(std::string newName, std::string newSurname);
 
+    virtual ~Osoba();
+
     void setNameAndSurname(std::string newName, std::string newSurname);
     
     std::string getName();
 
     std::string getSurname();
 
-    void przedstaw();
+    void virtual przedstaw() = 0;
 };
 
 #endif

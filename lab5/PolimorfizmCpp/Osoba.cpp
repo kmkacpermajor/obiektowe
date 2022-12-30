@@ -5,6 +5,10 @@ Osoba::Osoba(std::string newName, std::string newSurname){
     surname = newSurname; 
 }
 
+Osoba::~Osoba(){
+    std::cout << "Usuwam obiekt osoba" << std::endl;
+}
+
 void Osoba::setNameAndSurname(std::string newName, std::string newSurname){
     name = newName;
     surname = newSurname; 
